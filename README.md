@@ -1,74 +1,53 @@
+ <img src='asset/logo.png' align="left" width="11%" />
+ <div style="margin-top:50px;">
+      <h1 style="font-size: 30px; margin: 0;"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts</h1>
+ </div>
+   
  <div  align="center" style="margin-top:10px;"> 
-  <img src='asset/logo.png' align="left" width="18%" />
-   <div style="margin-top:50px;">
-  <h1 style="font-size: 30px; margin: 0;"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts</h1>
-   </div>
+    
+  [Sara Ghaboura](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
+  [Ketan More](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
+  [Retish Thawkar](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
+  [Wafa Alghallabi](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
+  [Omkar Thawakar](https://omkarthawakar.github.io) &nbsp;
+  <br>
+  [Fahad Shahbaz Khan](https://scholar.google.com/citations?hl=en&user=zvaeYnUAAAAJ) &nbsp;
+  [Hisham Cholakkal](https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ) &nbsp;
+  [Salman Khan](https://scholar.google.com/citations?hl=en&user=M59O9lkAAAAJ) &nbsp;
+  [Rao M. Anwer](https://scholar.google.com/citations?hl=en&user=_KlvMVoAAAAJ)
+  <br>
+  <br>
+  [![arXiv](https://img.shields.io/badge/arXiv-2502.0094-F6D769)](https://arxiv.org/abs/2502.00094)
+  [![Our Page](https://img.shields.io/badge/Visit-Our%20Page-E7DAB7?style=flat)](https://mbzuai-oryx.github.io/AIN/)
+  [![GitHub issues](https://img.shields.io/github/issues/mbzuai-oryx/Camel-Bench?color=E5D5C1&label=issues&style=flat)](https://github.com/mbzuai-oryx/AIN/issues)
+  [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/AIN?color=FAF1D9&style=flat)](https://github.com/mbzuai-oryx/AIN/stargazers)
+  [![GitHub license](https://img.shields.io/github/license/mbzuai-oryx/Camel-Bench?color=F1E9E3)](https://github.com/mbzuai-oryx/AIN/blob/main/LICENSE)
+  <br>
+  <em> <sup> *Equal Contribution  </sup> </em>
+  <br>
+  <br>
+</div>
+
+
+
 <p align="center">
-    <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
-</p>
+    <img src="asset/line.png"  height="9px">
+</p> 
 
-
-[Sara Ghaboura](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-[Ketan More](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-[Retish Thawkar](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-[Wafa Alghallabi](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-[Omkar Thawakar](https://omkarthawakar.github.io) &nbsp;
-<br>
-[Fahad Shahbaz Khan](https://scholar.google.com/citations?hl=en&user=zvaeYnUAAAAJ) &nbsp;
-[Hisham Cholakkal](https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ) &nbsp;
-[Salman Khan](https://scholar.google.com/citations?hl=en&user=M59O9lkAAAAJ) &nbsp;
-[Rao M. Anwer](https://scholar.google.com/citations?hl=en&user=_KlvMVoAAAAJ)
-<br>
-<br>
-  [![arXiv](https://img.shields.io/badge/arXiv-2502.0094-3399FF)](https://arxiv.org/abs/2502.00094)
-  [![Our Page](https://img.shields.io/badge/Visit-Our%20Page-8C7AFF?style=flat)](https://mbzuai-oryx.github.io/AIN/)
-  [![GitHub issues](https://img.shields.io/github/issues/mbzuai-oryx/Camel-Bench?color=FFF359&label=issues&style=flat)](https://github.com/mbzuai-oryx/AIN/issues)
-  [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/AIN?color=FF6A07&style=flat)](https://github.com/mbzuai-oryx/AIN/stargazers)
-  [![GitHub license](https://img.shields.io/github/license/mbzuai-oryx/Camel-Bench?color=FF6666)](https://github.com/mbzuai-oryx/AIN/blob/main/LICENSE)
-  <br>
-<em> <sup> *Equal Contribution  </sup> </em>
-  <br>
-  <br>
-</div>
-
+ 
 <div align="center">
-
-  <img src='images/Try.png' align="center" width="100%" />
-
-  <br>
-  <br>
-   &emsp; &emsp;  &emsp;
-  <img src="https://github.com/user-attachments/assets/29421075-ec74-4843-ad8a-8bd9dfd535d6" alt="chatbot" width="30px" />
-  &emsp; <a href="https://huggingface.co/spaces/ahmedheakl/AIN-Arabic-VLM" target="_blank">AIN Chatbot</a>
-   &emsp; &emsp;
-  <img src="https://github.com/user-attachments/assets/451fd639-7cb7-4e77-b7ed-c3678bf980e3" alt="telegram" width="25px" />
-  &emsp; <a href="https://t.me/arabicvlm_bot" target="_blank">AIN Telegram</a>
- &emsp; &emsp;
-  <img src="https://github.com/user-attachments/assets/35bd262d-55d1-45e9-8382-e44567b09102" alt="WhatsApp" width="25px" />
-  &emsp; <a href="https://wa.me/46738645096" target="_blank">AIN WhatsApp</a> 
-  <br>
-  <br>
- <br>
-  <img src='images/try3.png' align="center" width="100%" />
+ <b> If you like our project, please give us a star ⭐ on GitHub for the latest update. </b><br>
 </div>
-</div>
-</div>
-
----
-</div>
-
-<div align="center">
-
-<b> If you like our project, please give us a star ⭐ on GitHub for the latest update. </b><br>
-
----
-</div>
+<br>
+<p align="center">
+    <img src="asset/line.png" height="9px">
+</p> 
 <br>
 <br>
 
 ## 📢 Latest Updates
- 🔥 **03 Feb 2025** AIN-7B model the first Arabic Inclusive LMM is released 🤗.<br>
- 🚀 Model weights will be released soon. 
+ 🔥 **[19 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
+ 🤗 **[18 Feb 2025]** TimeTravel dataset available on HuggingFace.<br>
 <br>
 <br>
 
@@ -163,12 +142,7 @@ For questions or suggestions, feel free to reach out to us on [GitHub Discussion
 If you use AIN LMM in your research, please consider citing:
 
 ```bibtex
-@misc{heakl2025ainarabicinclusivelarge,
-      title={AIN: The Arabic INclusive Large Multimodal Model}, 
-      author={Ahmed Heakl and Sara Ghaboura and Omkar Thawkar and Fahad Shahbaz Khan and Hisham Cholakkal and Rao Muhammad Anwer and Salman Khan},
-      year={2025},
-      eprint={2502.00094},
-      url={https://arxiv.org/abs/2502.00094}, 
+
 ```
 <br>
 
@@ -176,7 +150,7 @@ If you use AIN LMM in your research, please consider citing:
 
 
 <p align="center">
-   <img src="images/IVAL_logo.png" width="18%" style="display: inline-block; margin: 0 10px;" />
-   <img src="images/Oryx_logo.png" width="10%" style="display: inline-block; margin: 0 10px;" />
-   <img src="images/MBZUAI_logo.png" width="50%" style="display: inline-block; margin: 0 10px;" />
+   <img src="asset/IVAL_logo.png" width="18%" style="display: inline-block; margin: 0 10px;" />
+   <img src="asset/Oryx_logo.png" width="10%" style="display: inline-block; margin: 0 10px;" />
+   <img src="asset/MBZUAI_logo.png" width="50%" style="display: inline-block; margin: 0 10px;" />
 </p>
