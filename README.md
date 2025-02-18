@@ -18,10 +18,10 @@
   <br>
   <br>
   [![arXiv](https://img.shields.io/badge/arXiv-2502.0094-F6D769)](https://arxiv.org/abs/2502.00094)
-  [![Our Page](https://img.shields.io/badge/Visit-Our%20Page-E7DAB7?style=flat)](https://mbzuai-oryx.github.io/AIN/)
-  [![GitHub issues](https://img.shields.io/github/issues/mbzuai-oryx/Camel-Bench?color=E5D5C1&label=issues&style=flat)](https://github.com/mbzuai-oryx/AIN/issues)
-  [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/AIN?color=FAF1D9&style=flat)](https://github.com/mbzuai-oryx/AIN/stargazers)
-  [![GitHub license](https://img.shields.io/github/license/mbzuai-oryx/Camel-Bench?color=F1E9E3)](https://github.com/mbzuai-oryx/AIN/blob/main/LICENSE)
+  [![Our Page](https://img.shields.io/badge/Visit-Our%20Page-E7DAB7?style=flat)](https://mbzuai-oryx.github.io/TimeTravel/)
+  [![GitHub issues](https://img.shields.io/github/issues/mbzuai-oryx/Camel-Bench?color=E5D5C1&label=issues&style=flat)](https://github.com/mbzuai-oryx/TimeTravel/issues)
+  [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/AIN?color=FAF1D9&style=flat)](https://github.com/mbzuai-oryx/TimeTravel/stargazers)
+  [![GitHub license](https://img.shields.io/github/license/mbzuai-oryx/Camel-Bench?color=F1E9E3)](https://github.com/mbzuai-oryx/TimeTravel/blob/main/LICENSE)
   <br>
   <em> <sup> *Equal Contribution  </sup> </em>
   <br>
@@ -74,28 +74,42 @@ TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical 
 </p> 
 
  ## 🌟 Key Features
- - The **first Arabic-centric inclusive Large Multimodal Model (LMM)** trained on **3.6M samples**.
- - Includes **35% authentic Arabic data** within its Arabic data subset.
- - Achieves **superior performance compared to open- and closed-source models** (e.g., GPT-4o) and open-source models (e.g., Qwen2-VL-7B) across tasks such as OCR and specialized domains.
- - Demonstrates **robust bilingual capabilities** (Arabic/English), **validated** through **comprehensive testing** and **human evaluation** across 17 Arab countries.
- - Exhibits **advanced cultural understanding** and domain expertise in fields such as **medical imaging**, **agriculture**, and **scientific visualization**.
+### **Key Features of TimeTravel**  
+- **First Historical Artifact Benchmark**: The 1<sup>st</sup> large-scale multimodal benchmark for AI-driven historical artifact analysis
+- **Broad Coverage**: It spans across **10 civilizations** and **266 cultural groups**.  
+- **Expert-Verified Samples**: Over **10k** samples include manuscripts, inscriptions, sculptures, and archaeological artifacts, **manually curated** by historians and archaeologists.  
+- **Structured Taxonomy**: Provides a hierarchical framework for artifact classification, interpretation, and cross-civilizational analysis.  
+- **AI Evaluation Framework**: Assesses **GPT-4V, LLaVA**, and other LMMs on historical knowledge, contextual reasoning, and multimodal understanding.  
+- **Bridging AI and Cultural Heritage**: Enables AI-driven **historical research, archaeological analysis, and cultural preservation**.  
+- **Open-Source & Standardized**: A publicly available dataset and evaluation framework to advance AI applications in **history and archaeology**.
 
-<p align="center">
-   <img src="images/intro_bar.png" width="70%" alt="intro_bar"  style="margin-right: 2px";/>
-   <h6>
-       <em>  <b>Figure 2.</b> Comparative performance of AIN-7B against other models across key domains, including OCR & Document Understanding, Remote Sensing, Agricultural Understanding, and overall performance across all domains. </em>
-   </h6>
-</p> 
+
 <br>
 
----
-## ⚖️ Quantitative Evaluation and Results
-AIN demonstrates state-of-the-art performance across diverse domains, surpassing both open- and closed-source models. Notably, it achieves an aggregate performance score of 63.77%, with significant gains in OCR, remote sensing, and agricultural image understanding.
+
+## <img src="https://github.com/user-attachments/assets/a560eb5d-9850-41fb-8eae-76cad05f9a61" width="35" height="35" alt="pipeline">  TimeTravel Creation Pipeline
+The TimeTravel dataset follows a structured pipeline to ensure the accuracy, completeness, and contextual richness of historical artifacts.<br>
+
+Our approach consists of four key phases:
+- **Data Selection:** Curated 10,250 artifacts from museum collections, spanning 266 cultural groups, with expert validation to ensure historical accuracy and diversity.<br>
+- **Data Cleaning:** Addressed missing or incomplete metadata (titles, dates, iconography) by cross-referencing museum archives and academic sources, ensuring data consistency.<br>
+- **Generation & Verification:** Used GPT-4o to generate context-aware descriptions, which were refined and validated by historians and archaeologists for authenticity.<br>
+- **Data Aggregation:** Standardized and structured dataset into image-text pairs, making it a valuable resource for AI-driven historical analysis and cultural heritage research.<br>
+
+<p align="center">
+   <img src="asset/TT_pipeline.png" width="3000px" height="300px" alt="pipeline"  style="margin-right: 2px";/>
+    <h6>
+       <em>  <b>Figure 2.</b> TimeTravel Data Pipeline: A structured workflow for collecting, processing, and refining museum artifact data, integrating GPT-4o-generated descriptions with expert validation for benchmark accuracy.compliance. </em>
+    </h6>
+
+
+ 
+##  🎯 Quantitative Evaluation and Results
 
 
 
-## 🎯 Qualitative Evaluation
-The qualitative evaluation showcases AIN's advanced capabilities in handling diverse, complex tasks, including OCR, medical imaging, remote sensing, and cultural-specific understanding, with remarkable precision and contextual relevance. Unlike GPT-4o and LLaVA, AIN demonstrates superior performance in identifying intricate details and maintaining accuracy across varied query formats and multi-domain challenges.
+## 🧐 Qualitative Evaluation
+
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px;">
   <p align="center" >
@@ -108,41 +122,21 @@ The qualitative evaluation showcases AIN's advanced capabilities in handling div
 </div>
 <br>
 
----
-## 🧐 Data Verification and Toxicity Filtering
-A multi-step verification pipeline was implemented to ensure high-quality translations and safe visual data. Translation accuracy was assessed through human evaluation, where native Arabic speakers rated outputs against reference translations, and semantic similarity checks were conducted using **LaBSE**. Additionally, translated samples were reverse-translated and validated using **BLEU, METEOR, and ROUGE scores** to measure correctness, correlation, and overlap. For visual data, toxicity filtering was applied using **LLavaGuard’s safety policies and GPT-4o**, identifying and removing unsafe content related to violence, substance abuse, and harmful imagery, ensuring compliance with ethical AI standards.
-
-<p align="center">
-   <img src="images/verify_pipeline.png" width="75%" alt="verify"  style="margin-right: 2px";/>
-    <h6>
-       <em>  <b>Figure 4.</b> Data verification and filtering pipeline for textual and visual data, ensuring high-quality training data through semantic similarity checks, translation quality evaluations, and toxicity screening for safety compliance. </em>
-    </h6>
-</p> 
-<br>
-<br>
-<p align="center">
-   <img src="images/toxicity.png" width=50%" alt="verify"  style="margin-right: 2px";/>
-    <h6>
-       <em>  <b>Figure 5.</b> Distribution of visual data toxicity filtering results, showing that 95% of the data is classified as safe, while 5% is identified as unsafe due to categories like weapons or substance abuse, violence, and animal cruelty. </em>
-   </h6>
-</p> 
-<br>
-<br>
 
 ---
-## 🔒 License
+## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 <br>
 <br>
 
 ## 💬 Contact us
-For questions or suggestions, feel free to reach out to us on [GitHub Discussions](https://github.com/mbzuai-oryx/AIN/discussions).
+For questions or suggestions, feel free to reach out to us on [GitHub Discussions](https://github.com/mbzuai-oryx/TimeTravel/discussions).
 
 ---
 
 ## 📚 Citation
 
-If you use AIN LMM in your research, please consider citing:
+If you use TimeTravle dataset in your research, please consider citing:
 
 ```bibtex
 
