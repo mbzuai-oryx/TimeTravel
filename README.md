@@ -7,9 +7,9 @@
     
   [Sara Ghaboura](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
   [Ketan More](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-  [Retish Thawkar](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-  [Wafa Alghallabi](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-  [Omkar Thawakar](https://omkarthawakar.github.io) <sup> * </sup> &nbsp;
+  [Retish Thawkar](https://huggingface.co/SLMLAH) &nbsp;
+  [Wafa Alghallabi](https://huggingface.co/SLMLAH) &nbsp;
+  [Omkar Thawakar](https://omkarthawakar.github.io)  &nbsp;
   <br>
   [Fahad Shahbaz Khan](https://scholar.google.com/citations?hl=en&user=zvaeYnUAAAAJ) &nbsp;
   [Hisham Cholakkal](https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ) &nbsp;
@@ -69,9 +69,10 @@ TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical 
 <h6><em>  <b>Figure 1.</b> Left: TimeTravel Taxonomy maps artifacts from 10 civilizations, 266 cultures, and 10k+ verified samples for AI-driven historical analysis. Right: Regional dataset distribution by archaeological provenance, with Greece holding the largest share (18%) and balanced regional coverage.
 </em> 
 </h6>
-<br>
-<br>
 </p> 
+<br>
+<br>
+
 
  ## 🌟 Key Features
 ### **Key Features of TimeTravel**  
@@ -90,40 +91,251 @@ TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical 
 ## <img src="https://github.com/user-attachments/assets/a560eb5d-9850-41fb-8eae-76cad05f9a61" width="35" height="35" alt="pipeline">  TimeTravel Creation Pipeline
 The TimeTravel dataset follows a structured pipeline to ensure the accuracy, completeness, and contextual richness of historical artifacts.<br>
 
+<p align="center">
+   <img src="asset/TT_pipeline.png" width="2900px" height="250px" alt="pipeline"  style="margin-right: 2px";/>
+    <h6>
+       <em>  <b>Figure 2.</b> TimeTravel Data Pipeline: A structured workflow for collecting, processing, and refining museum artifact data, integrating GPT-4o-generated descriptions with expert validation for benchmark accuracy.compliance. </em>
+    </h6>
+ 
 Our approach consists of four key phases:
 - **Data Selection:** Curated 10,250 artifacts from museum collections, spanning 266 cultural groups, with expert validation to ensure historical accuracy and diversity.<br>
 - **Data Cleaning:** Addressed missing or incomplete metadata (titles, dates, iconography) by cross-referencing museum archives and academic sources, ensuring data consistency.<br>
 - **Generation & Verification:** Used GPT-4o to generate context-aware descriptions, which were refined and validated by historians and archaeologists for authenticity.<br>
 - **Data Aggregation:** Standardized and structured dataset into image-text pairs, making it a valuable resource for AI-driven historical analysis and cultural heritage research.<br>
 
-<p align="center">
-   <img src="asset/TT_pipeline.png" width="3000px" height="300px" alt="pipeline"  style="margin-right: 2px";/>
-    <h6>
-       <em>  <b>Figure 2.</b> TimeTravel Data Pipeline: A structured workflow for collecting, processing, and refining museum artifact data, integrating GPT-4o-generated descriptions with expert validation for benchmark accuracy.compliance. </em>
-    </h6>
 
-
+<br>
  
 ##  🎯 Quantitative Evaluation and Results
 
+<div align="center";>
+<table>
+    <thead>
+        <tr style="background-color: #a52a2a; color: white;">
+            <th>Model</th>
+            <th>BLEU</th>
+            <th>METEOR</th>
+            <th>ROUGE-L</th>
+            <th>SPICE</th>
+            <th>BERTScore</th>
+            <th>LLM-Judge</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GPT-4o-0806</td>
+            <td><b>0.1758🏅</b></td>
+            <td>0.2439</td>
+            <td><b>0.1230🏅</b></td>
+            <td><b>0.1035🏅</b></td>
+            <td><b>0.8349🏅</b></td>
+            <td><b>0.3013🏅</b></td>
+        </tr>
+        <tr>
+            <td>Gemini-2.0-Flash</td>
+            <td>0.1072</td>
+            <td>0.2456</td>
+            <td>0.0884</td>
+            <td>0.0919</td>
+            <td>0.8127</td>
+            <td>0.2630</td>
+        </tr>
+        <tr>
+            <td>Gemini-1.5-Pro</td>
+            <td>0.1067</td>
+            <td>0.2406</td>
+            <td>0.0848</td>
+            <td>0.0901</td>
+            <td>0.8172</td>
+            <td>0.2276</td>
+        </tr>
+        <tr>
+            <td>GPT-4o-mini-0718</td>
+            <td>0.1369</td>
+            <td><b>0.2658🏅</b></td>
+            <td>0.1027</td>
+            <td>0.1001</td>
+            <td>0.8283</td>
+            <td>0.2492</td>
+        </tr>
+        <tr>
+            <td>Llama-3.2-Vision-Inst</td>
+            <td>0.1161</td>
+            <td>0.2072</td>
+            <td>0.1027</td>
+            <td>0.0648</td>
+            <td>0.8111</td>
+            <td>0.1255</td>
+        </tr>
+        <tr>
+            <td>Qwen-2.5-VL</td>
+            <td>0.1155</td>
+            <td>0.2648</td>
+            <td>0.0887</td>
+            <td>0.1002</td>
+            <td>0.8198</td>
+            <td>0.1792</td>
+        </tr>
+        <tr>
+            <td>Llava-Next</td>
+            <td>0.1118</td>
+            <td>0.2340</td>
+            <td>0.0961</td>
+            <td>0.0799</td>
+            <td>0.8246</td>
+            <td>0.1161</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+ <h6>
+       <em>  <strong>Table:</strong> Performance comparison of various closed and open-source models on our proposed TimeTravel benchmark.</em>
+ </h6>      
+       </p>
+<h5>
+<table>
+    <thead>
+        <tr style="background-color: #a52a2a; color: white;">
+            <th>Model</th>
+            <th>India</th>
+            <th>Roman Emp.</th>
+            <th>China</th>
+            <th>British Isles</th>
+            <th>Iran</th>
+            <th>Iraq</th>
+            <th>Japan</th>
+            <th>Cent. America</th>
+            <th>Greece</th>
+            <th>Egypt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GPT-4o-0806</td>
+            <td><b>0.2491🏅</b></td>
+            <td><b>0.4463🏅</b></td>
+            <td><b>0.2491🏅</b></td>
+            <td><b>0.1899🏅</b></td>
+            <td><b>0.3522🏅</b></td>
+            <td><b>0.3545🏅</b></td>
+            <td><b>0.2228🏅</b></td>
+            <td><b>0.3144🏅</b></td>
+            <td><b>0.2757🏅</b></td>
+            <td><b>0.3649🏅</b></td>
+        </tr>
+        <tr>
+            <td>Gemini-2.0-Flash</td>
+            <td>0.1859</td>
+            <td>0.3358</td>
+            <td>0.2059</td>
+            <td>0.1556</td>
+            <td>0.3376</td>
+            <td>0.3071</td>
+            <td>0.2000</td>
+            <td>0.2677</td>
+            <td>0.2582</td>
+            <td>0.3602</td>
+        </tr>
+        <tr>
+            <td>Gemini-1.5-Pro</td>
+            <td>0.1118</td>
+            <td>0.2632</td>
+            <td>0.2139</td>
+            <td>0.1545</td>
+            <td>0.3320</td>
+            <td>0.2587</td>
+            <td>0.1871</td>
+            <td>0.2708</td>
+            <td>0.2088</td>
+            <td>0.2908</td>
+        </tr>
+        <tr>
+            <td>GPT-4o-mini-0718</td>
+            <td>0.2311</td>
+            <td>0.3612</td>
+            <td>0.2207</td>
+            <td>0.1866</td>
+            <td>0.2991</td>
+            <td>0.2632</td>
+            <td>0.2087</td>
+            <td>0.3195</td>
+            <td>0.2101</td>
+            <td>0.2501</td>
+        </tr>
+        <tr>
+            <td>Llama-3.2-Vision-Inst</td>
+            <td>0.0744</td>
+            <td>0.1450</td>
+            <td>0.1227</td>
+            <td>0.0777</td>
+            <td>0.2000</td>
+            <td>0.1155</td>
+            <td>0.1075</td>
+            <td>0.1553</td>
+            <td>0.1351</td>
+            <td>0.1201</td>
+        </tr>
+        <tr>
+            <td>Qwen-2.5-VL</td>
+            <td>0.0888</td>
+            <td>0.1578</td>
+            <td>0.1192</td>
+            <td>0.1713</td>
+            <td>0.2515</td>
+            <td>0.1576</td>
+            <td>0.1771</td>
+            <td>0.1442</td>
+            <td>0.1442</td>
+            <td>0.2660</td>
+        </tr>
+        <tr>
+            <td>Llava-Next</td>
+            <td>0.0788</td>
+            <td>0.0961</td>
+            <td>0.1455</td>
+            <td>0.1091</td>
+            <td>0.1464</td>
+            <td>0.1194</td>
+            <td>0.1353</td>
+            <td>0.1917</td>
+            <td>0.1111</td>
+            <td>0.0709</td>
+        </tr>
+    </tbody>
+</table></h5>
+<p>
+ <h6>
+       <em>  <strong>Table:</strong> Analysis of LLM-Judge evaluation of various models in describing archaeological artifacts across civilizations from different geographical locations.</em>
+ </h6>  
+</p>
 
+</div>
+
+
+
+<br>
+<br>
 
 ## 🧐 Qualitative Evaluation
+Figures 3 and 4 showcase the cultural and material diversity of the TimeTravel dataset alongside a cross-model comparison, highlighting variations in artifact representation, historical periods, material compositions, and descriptive accuracy across different AI models.
 
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px;">
+<div style="display: flex; justify-content: center; align-items: center;>
   <p align="center" >
-  <img src="images/contre.png" width="50%" alt="contre" />
-  <img src="images/qualitative.png" width="40%" alt="qualitative" />
+    <img src="asset/TT_ex_mini.png" width="1100px" height="450px" alt="models_compare" />
      <h6>
-       <em>  <b>Figure 3.</b> Left: Comparison of AIN-7B’s qualitative performance against other models across multiple domains. Right: Qualitative examples showcasing AIN-7B’s capabilities across various domains, including general VQA, OCR & Document Understanding, Remote Sensing, Medical Imaging, Agricultural Understanding, and Cultural-Specific tasks. </em>
+       <em>  <b>Figure 3.</b> Cultural and Material Diversity: TimeTravel spans civilizations from Ancient Egypt to Japan, covering prehistoric to medieval eras with artifacts in ceramics, metals, and stone, showcasing historical craftsmanship and cultural heritage. </em>
+    </h6>
+    <img src="asset/TT_cross_mini.png" width="1100px" height="225px" alt="models_compare" />
+    <h6>
+       <em>  <b>Figure 4.</b> Cross-Model Comparison: Variations in descriptive depth and accuracy across open- and closed-source models, highlighting interpretative differences and alignment with ground truth. </em>
     </h6>
   </p> 
+  
 </div>
 <br>
 
 
----
+
 ## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 <br>
@@ -132,7 +344,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 💬 Contact us
 For questions or suggestions, feel free to reach out to us on [GitHub Discussions](https://github.com/mbzuai-oryx/TimeTravel/discussions).
 
----
+
 
 ## 📚 Citation
 
