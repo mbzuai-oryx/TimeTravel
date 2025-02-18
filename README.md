@@ -92,7 +92,7 @@ TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical 
 The TimeTravel dataset follows a structured pipeline to ensure the accuracy, completeness, and contextual richness of historical artifacts.<br>
 
 <p align="center">
-   <img src="asset/TT_pipeline.png" width="2900px" height="250px" alt="pipeline"  style="margin-right: 2px";/>
+   <img src="asset/TT_pipeline.png" width="2700px" height="250px" alt="pipeline"  style="margin-right: 2px";/>
     <h6>
        <em>  <b>Figure 2.</b> TimeTravel Data Pipeline: A structured workflow for collecting, processing, and refining museum artifact data, integrating GPT-4o-generated descriptions with expert validation for benchmark accuracy.compliance. </em>
     </h6>
