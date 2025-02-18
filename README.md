@@ -9,7 +9,7 @@
   [Ketan More](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
   [Retish Thawkar](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
   [Wafa Alghallabi](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-  [Omkar Thawakar](https://omkarthawakar.github.io) &nbsp;
+  [Omkar Thawakar](https://omkarthawakar.github.io) <sup> * </sup> &nbsp;
   <br>
   [Fahad Shahbaz Khan](https://scholar.google.com/citations?hl=en&user=zvaeYnUAAAAJ) &nbsp;
   [Hisham Cholakkal](https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ) &nbsp;
@@ -45,31 +45,34 @@
 <br>
 <br>
 
-## 📢 Latest Updates
- 🔥 **[19 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
+##  <img src="https://github.com/user-attachments/assets/1abcf195-ad44-4500-a14b-f1a4bef9b748" width="40" height="40" />Latest Updates
+
  🤗 **[18 Feb 2025]** TimeTravel dataset available on HuggingFace.<br>
+ 🔥 **[19 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
 <br>
 <br>
 
 
-## <img src="images/AIN.png" width="4%" alt="AIN Logo"> Overview
+## <img src="asset/hour_g_1.png" width="40" height="40" alt="hourg_logo"> Overview
 <p style="text-align: justify">
-AIN, the <b>First Arabic Inclusive Multimodal Model</b>, bridges the gap in generative AI for Arabic by leveraging Modern Standard Arabic (MSA) data to achieve state-of-the-art performance across diverse tasks and specialized domains. AIN is a <b>bilingual model</b> (MSA and English) with broad applications from <b>medical</b> to <b>agricultural</b> domains, excelling in <b>OCR and Document Understanding</b>, and <b>Remote Sensing Imaging</b>. Trained on <b>3.6M </b>samples, where <b>35%</b> of its Arabic data comes from authentic sources. Built on Qwen-2-VL, AIN empowers Arabic speakers with advanced, inclusive AI capabilities, outperforming leading models in key benchmarks. </p>
+TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical artifact analysis, designed to identify artifacts within their <b>historical era and cultural context</b>. Spanning <b>266 cultural groups across 10 regions</b>, it prioritizes <b>historical knowledge, contextual reasoning, and cultural preservation</b>, unlike generic object recognition benchmarks. With <b>over 10,000 expert-verified samples</b>, TimeTravel sets a new standard for evaluating multimodal models in historical research, cross-civilizational analysis, and AI-powered cultural heritage preservation.
 <br>
-<p align="center" >
-   <img src="images/radar_chart.png" width="65%" alt="radar_chart"  style="margin-right: 2px";/>
- <h6>
-       <em>  <b>Figure 1.</b> showcases a comprehensive performance analysis of AIN-7B across CAMEL-Bench domains, comparing it with prominent closed-source models as well as open-source counterparts. <strong>OCR:</strong> "OCR & Document Understanding",  <strong>Video:</strong> "General Video & Multi-Image Understanding",  <strong>RS:</strong> "Remote Sensing Understanding", <strong>CDT:</strong> "Chart, Diagram & Table Understanding",  <strong>Agro.:</strong> "Agricultural Image Understanding", <strong>Cultural:</strong> "Cultural-Specific Understanding", <strong>Medical:</strong> "Medical Image Understanding".
-       </em> 
- </h6>
+<br>
+<div style="display: flex; justify-content: space-between; align="center;">
+    <figure style="width: 40%;">
+      &emsp;&emsp;
+     <img src="asset/Taxonomy.png" alt="Figure 1" style="width: 40%; height: auto;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+     <img src="asset/Samples_Distribution.png" alt="Figure 2" style="width: 40%; height: auto;">
+    </figure>
+</div>
+<br>
+<h6><em>  <b>Figure 1.</b> Left: TimeTravel Taxonomy maps artifacts from 10 civilizations, 266 cultures, and 10k+ verified samples for AI-driven historical analysis. Right: Regional dataset distribution by archaeological provenance, with Greece holding the largest share (18%) and balanced regional coverage.
+</em> 
+</h6>
 <br>
 <br>
 </p> 
 
-AIN is a versatile LMM excelling in visual and contextual understanding across diverse domains, including VQA on complex topics, OCR for various fonts and handwriting, cultural insights (traditions, food, places), agricultural tasks (crop identification, fruit classification, disease detection), remote sensing (multi-scale objects), medical imaging (various modalities), and video analysis (animation, human activities).
-<br>
-<br>
-  
  ## 🌟 Key Features
  - The **first Arabic-centric inclusive Large Multimodal Model (LMM)** trained on **3.6M samples**.
  - Includes **35% authentic Arabic data** within its Arabic data subset.
