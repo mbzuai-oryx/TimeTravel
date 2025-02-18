@@ -119,7 +119,7 @@
             margin-bottom: 30px;
         }
         .logo {
-            width:22%;
+            width:10%;
             display: block;
             margin: -5px auto;
         }
@@ -294,6 +294,23 @@
         .abstract-content p:last-child {
             margin-bottom: 0;
         }
+     .fig-container-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+        .fig-container-side img {
+            max-width: 45%;
+            height: auto;
+        }
+        .button img {
+            height: 20px;
+            margin-right: 8px;
+        }
+        
     </style>
 </head>
 <body>
@@ -323,6 +340,27 @@
             </div>
 
             <div class="publication-links has-text-centered">
+            <span class="link-block">
+            <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
+                <img src="asset/pdf.png" alt="PDF">
+                <span>Paper</span>
+            </a>
+        </span>
+        <span class="link-block">
+            <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
+                <img src="asset/arxiv.png" alt="arXiv">
+                <span>arXiv</span>
+            </a>
+        </span>
+        <span class="link-block">
+            <a href="https://github.com/mbzuai-oryx/TimeTravel" class="external-link button">
+                <img src="asset/github.png" alt="GitHub">
+                <span>Github</span>
+            </a>
+        </span>
+
+    
+            <div class="publication-links has-text-centered">
                 <span class="link-block">
                     <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
                         <span class="icon">
@@ -342,8 +380,10 @@
                 </span>
                 <span class="link-block">
                     <a href="https://github.com/mbzuai-oryx/TimeTravel" class="external-link button">
-                        <span class="logo">
-                             <img src="asset/github.png" alt="Code"> Github
+                         <span class="icon">
+                         </span>
+                         <i class="ai git"></i>
+                        <span>Github</span>
                         </span>
                     </a>
                 </span>
