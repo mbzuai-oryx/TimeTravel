@@ -53,7 +53,7 @@
 <br>
 
 
-## <img src="asset/hourg_1.png" width="40" height="40" alt="hourg_logo"> Overview
+## <img src="asset/hourg_1.png" width="30" height="40" alt="hourg_logo"> Overview
 <p style="text-align: justify">
 TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical artifact analysis, designed to identify artifacts within their <b>historical era and cultural context</b>. Spanning <b>266 cultural groups across 10 regions</b>, it prioritizes <b>historical knowledge, contextual reasoning, and cultural preservation</b>, unlike generic object recognition benchmarks. With <b>over 10,000 expert-verified samples</b>, TimeTravel sets a new standard for evaluating multimodal models in historical research, cross-civilizational analysis, and AI-powered cultural heritage preservation.
 <br>
@@ -107,8 +107,10 @@ Our approach consists of four key phases:
 <br>
  
 ##  🎯 Quantitative Evaluation and Results
+The following tables present a comprehensive evaluation of various multimodal models on the TimeTravel benchmark. The first table compares model performance across multiple metrics, while the second analyzes their ability to describe archaeological artifacts from different civilizations, highlighting variations in accuracy and descriptive depth.
 
 <div align="center";>
+<h5>
 <table>
     <thead>
         <tr style="background-color: #a52a2a; color: white;">
@@ -187,6 +189,7 @@ Our approach consists of four key phases:
         </tr>
     </tbody>
 </table>
+</h5>
 <p>
  <h6>
        <em>  <strong>Table:</strong> Performance comparison of various closed and open-source models on our proposed TimeTravel benchmark.</em>
