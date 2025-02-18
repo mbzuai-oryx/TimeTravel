@@ -53,7 +53,7 @@
 <br>
 
 
-## <img src="asset/hour_g_1.png" width="40" height="40" alt="hourg_logo"> Overview
+## <img src="asset/hourg_1.png" width="40" height="40" alt="hourg_logo"> Overview
 <p style="text-align: justify">
 TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical artifact analysis, designed to identify artifacts within their <b>historical era and cultural context</b>. Spanning <b>266 cultural groups across 10 regions</b>, it prioritizes <b>historical knowledge, contextual reasoning, and cultural preservation</b>, unlike generic object recognition benchmarks. With <b>over 10,000 expert-verified samples</b>, TimeTravel sets a new standard for evaluating multimodal models in historical research, cross-civilizational analysis, and AI-powered cultural heritage preservation.
 <br>
