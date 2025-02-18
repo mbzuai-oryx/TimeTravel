@@ -33,11 +33,6 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .logo {
-            width:8%;
-            display: block;
-            margin: -5px auto;
-        }
         .container {
             text-align: center;
         }
@@ -86,15 +81,32 @@
             margin: 20px auto;
             padding: 20px;
         }
+        
+        .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Adjust spacing between logo and title */
+    }
+    
+        /* Adjust logo size */
+        .logo {
+            width: 60px; /* Adjust size as needed */
+            height: auto;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        /* Ensure title aligns properly */
         .title {
             font-size: 3em;
-            margin: 0px 0;
+            margin: 0;
             background: linear-gradient(to right, #333333, #666666);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
-            font-family:Geneva, Tahoma, sans-serif
-        }
+            font-family: Geneva, Tahoma, sans-serif;
+    }
         .title2 {
             font-size: 2em;
             margin: 0px 0;
@@ -193,7 +205,7 @@
             background-color: #FBF6F2; /* Light beige color */
             padding: 30px;
             margin: 30px auto;
-            max-width: 900px;
+            max-width: 3000px;
             border-radius: 8px;
         }
         
@@ -208,7 +220,10 @@
     </style>
 </head>
 <body>
-           <img src="asset/logo.png" alt="logo" class="logo"> <h1 class="title">TimeTravel</h1>
+           <div class="header-container">
+                <img src="asset/logo.png" alt="logo" class="logo">
+                <h1 class="title">TimeTravel</h1>
+            </div>
             <h1 class="title2">A Comprehensive Benchmark</h1>
             <h1 class="title2">to Evaluate LMMs on Historical and Cultural Artifacts</h1>
             <!-- Authors -->
