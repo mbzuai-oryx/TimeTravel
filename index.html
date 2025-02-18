@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIN: The Arabic Inclusive Multimodal Model</title>
+    <link rel="icon" type="image/png" href="asset/logo.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .table-container {
+            max-width: 60%;  /* Matches the fig-container width */
+            margin: 30px auto;
+            overflow-x: auto;
+        }
+        .performance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .performance-table th, 
+        .performance-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .performance-table th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        .performance-table tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        .performance-table td.total-column {
+            background-color: #d0d0d0;
+        }
+        .performance-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        .table-caption {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }  
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 18px;
+            border-radius: 30px; /* Makes them rounded */
+            background-color: #222; /* Dark color */
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #fcf4a3; /* Yellow on hover */
+        }
+
+        .button .icon {
+            margin-right: 8px;
+        }
+
+
+        body {
+            position: relative;
+        }
+        .demo-links {
+            text-align: center;
+            margin: 10px 0;
+            background-color: #e6e6e6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .demo-links a {
+            color: #333;
+            margin: 0 20px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+        .demo-links img {
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color:  white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow:  white;
+            border-radius: 8px;
+        }
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: linear-gradient(to right, #b8fbe9, #c2f9fe);
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width:22%;
+            display: block;
+            margin: -5px auto;
+        }
+        .container {
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container img {
+            max-width: 65%; /* Reduced from 80% */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .fig-container-side {
+            text-align: center;
+            margin: 0px 0;
+        }
+        .fig-container-side img:first-child {
+            width: 50%;
+            margin: 0 2%;
+            display: inline-block;
+        }
+        .fig-container-side img:last-child {
+            width: 40%;
+            margin: 0 2%;
+            display: inline-block;
+        }
+        p {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        ul {
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .features {
+            text-align: center;
+        }
+        .features ul {
+            padding-left: 20px;
+        }
+        .badges {
+            text-align: center;
+        }
+        .publication-authors {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .citation {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .title {
+            font-size: 4em;
+            margin: 0px 0;
+            background: linear-gradient(to right, #333333, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-family:Geneva, Tahoma, sans-serif
+        }
+        .title2 {
+            font-size:2.5em;
+            margin: 0px 0;
+            background: linear-gradient(to right, #585858, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family:Geneva, Tahoma, sans-serif
+        }
+        .authors {
+           font-size: 18px;
+            margin: 20px 0;
+        }
+        .badges {
+            margin: 20px 0;
+        }
+        .badges img {
+            margin: 0 5px;
+            max-width: 120%;
+        }
+        .fig-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container img {
+            max-width: 60%;
+            height: auto;
+        }
+        .fig-container-s {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container-s img {
+            max-width: 40%;
+        }
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #e0e0e0;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .logos img {
+            height: 50px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .features {
+            margin: 30px 0;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .citation {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .abstract-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px 20px;
+            background-color:white;
+        }
+        .abstract-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:  #333;
+        }
+        .abstract-content {
+            text-align: justify;
+            line-height: 1.6;
+            margin: 0;
+            color: #2c2c2c;
+        }
+        .abstract-content p {
+            margin-bottom: 15px;
+        }
+        .abstract-content p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+           <img src="images/logo.png" alt="TT Logo" class="logo">
+            <h1 class="title">Time Travel</h1>
+            <h1 class="title2">A Comprehensive Benchmark</h1>
+            <h1 class="title2">to Evaluate LMMs on Historical and Cultural Artifacts</h1>
+            <!-- Authors -->
+            <div class="authors">
+                <p>
+                    Sara Ghaboural<sup style="color:#3399FF;">1*</sup>, 
+                    Ketan More<sup style="color:#3399FF;">1*</sup>, 
+                    Ritesh Thawkar<sup style="color:#3399FF;">1</sup>, 
+                    Wafa Alghallabi<sup style="color:#3399FF;">1</sup>, 
+                    Omkar Thawakar<sup style="color:#3399FF;">1</sup>, <br>
+                    Fahad S. Khan<sup style="color:#3399FF;">1, </sup><sup style="color:#FF66B3;">2</sup>, 
+                    Hisham Cholakkal<sup style="color:#3399FF;">1</sup>,
+                    Salman Khan<sup style="color:#3399FF;">1, </sup><sup style="color:#FFA280;">3</sup>,
+                    Rao M. Anwer<sup style="color:#3399FF;">1, </sup><sup style="color:#4CB5AE;">4</sup>,
+                </p>
+                <p>
+                    <sup style="color:#3399FF;">1</sup>Mohamed bin Zayed University of AI, 
+                    <sup style="color:#FF66B3;">2</sup>Linköping University, 
+                    <sup style="color:#FFA280;">3</sup>Australian National University,
+                    <sup style="color:#4CB5AE;">4</sup>Aalto University
+                </p>
+            </div>
+
+            <div class="publication-links has-text-centered">
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
+                        <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2410.18976"
+                        class="external-link button">
+                        <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://github.com/mbzuai-oryx/Camel-Bench" class="external-link button">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://huggingface.co/collections/ahmedheakl/camel-bench-670750f3998395452cd3b7b1" class="external-link button">
+                        <span class="icon" style="font-size:18px">🤗</span>
+                        <span>Dataset</span>
+                        </a>
+                    </span>
+            </div>
+
+
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a
+                            href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                            Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
