@@ -96,7 +96,7 @@
             font-family:Geneva, Tahoma, sans-serif
         }
         .title2 {
-            font-size:1.5em;
+            font-size: 2em;
             margin: 0px 0;
             background: linear-gradient(to right, #585858, #666666);
             -webkit-background-clip: text;
@@ -142,7 +142,7 @@
             align-items: left;
         }
         .logos img {
-            height: 32px;
+            height: 45px;
         }
         a {
             color: #007bff;
@@ -175,6 +175,35 @@
             height: 20px;
             margin-right: 8px;
         }
+
+        .fig-intro {
+            text-align: center;
+            margin: 30px auto;
+        }
+        
+        .fig-intro img {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Style for the abstract section */
+        .abstract-section {
+            background-color: #f5f5dc; /* Light beige color */
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 8px;
+        }
+        
+        .abstract-section p {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
         
     </style>
 </head>
@@ -228,6 +257,30 @@
                         <span>Dataset</span>
                         </a>
                     </span>
+            </div>
+
+            <!-- Introductory Figure -->
+            <div class="fig-intro">
+                <img src="asset/intro_figure.png" alt="Introductory Figure">
+            </div>
+            
+            <!-- Abstract Section -->
+            <div class="abstract-section">
+                <h2 class="title2">Abstract</h2>
+                <p>
+                    Understanding historical and cultural artifacts demands human expertise and advanced computational techniques,
+                    yet the process remains complex and time-intensive. While large multimodal models offer promising support, 
+                    their evaluation and improvement require a standardized benchmark. To address this, we introduce \emph{TimeTravel}, 
+                    a benchmark of 10,250 expert-verified samples spanning 266 distinct cultures across 10 major historical regions. 
+                    Designed for AI-driven analysis of manuscripts, artworks, inscriptions, and archaeological discoveries, TimeTravel
+                    provides a structured dataset and robust evaluation framework to assess AI models’ capabilities in classification, 
+                    interpretation, and historical comprehension. By integrating AI with historical research, TimeTravel fosters AI-powered 
+                    tools for historians, archaeologists, researchers, and cultural tourists to extract valuable insights while ensuring 
+                    technology contributes meaningfully to historical discovery and cultural heritage preservation. We evaluate contemporary 
+                    AI models on TimeTravel highlight their strengths and identify areas for improvement. Our goal is to establish AI 
+                    as a reliable partner in preserving cultural heritage, ensuring that technological advancements contribute meaningfully 
+                    to historical discovery.
+                </p>
             </div>
 
 
