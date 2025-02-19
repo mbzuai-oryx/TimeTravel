@@ -345,6 +345,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <br>
 
 ## 💬 Contact us
+[Sara Ghaboura](sara.ghboura@mbzuai.ac.ae), [Ketan More](ketan.more@mbzuai.ac.ae), [Omkar Thawakar](omkar.thawakar@mbzuai.ac.ae), 
 For questions or suggestions, feel free to reach out to us on [GitHub Discussions](https://github.com/mbzuai-oryx/TimeTravel/discussions).
 
 
