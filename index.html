@@ -13,7 +13,7 @@
             align-items: center;
             justify-content: center;
             padding: 10px 18px;
-            border-radius: 30px; /* Makes them rounded */
+            border-radius: 30px; /* Rounded buttons */
             background-color: #222; /* Dark color */
             color: white;
             font-size: 16px;
@@ -21,83 +21,20 @@
             border: none;
             transition: background-color 0.3s ease;
         }
-
         .button:hover {
             background-color: #fcf4a3; /* Yellow on hover */
         }
-
-        .button .icon {
-            margin-right: 8px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .container {
-            text-align: center;
-        }
-        h1, h2 {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .fig-container img {
-            max-width: 65%; /* Reduced from 80% */
-            height: auto;
-            margin: 0 auto;
-            display: block;
-        }
-        .fig-container-side {
-            text-align: center;
-            margin: 0px 0;
-        }
-        .fig-container-side img:first-child {
-            width: 50%;
-            margin: 0 2%;
-            display: inline-block;
-        }
-        .fig-container-side img:last-child {
-            width: 40%;
-            margin: 0 2%;
-            display: inline-block;
-        }
-        p {
-            text-align: center;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        ul {
-            display: inline-block;
-            text-align: left;
-            margin: 0 auto;
-        }
-        .publication-authors {
-            text-align: center;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        .citation {
-            text-align: left;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        
         .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px; /* Adjust spacing between logo and title */
-    }
-    
-        /* Adjust logo size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
         .logo {
-            width: 60px; /* Adjust size as needed */
+            width: 60px;
             height: auto;
             margin: 0;
-            display: inline-block;
         }
-        
-        /* Ensure title aligns properly */
         .title {
             font-size: 3em;
             margin: 0;
@@ -106,257 +43,157 @@
             -webkit-text-fill-color: transparent;
             font-weight: bold;
             font-family: Geneva, Tahoma, sans-serif;
-    }
+        }
         .title2 {
             font-size: 2em;
-            margin: 0px 0;
             background: linear-gradient(to right, #585858, #666666);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family:Geneva, Tahoma, sans-serif
+            font-family: Geneva, Tahoma, sans-serif;
         }
-         .title3 {
+        .title3 {
             font-size: 1.5em;
-            margin: 0px 0;
             background: linear-gradient(to right, #585858, #666666);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family:Geneva, Tahoma, sans-serif
+            font-family: Geneva, Tahoma, sans-serif;
         }
-        .authors {
-           font-size: 18px;
-            margin: 20px 0;
-        }
-        .fig-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .fig-container img {
-            max-width: 60%;
-            height: auto;
-        }
-        .fig-container-s {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .fig-container-s img {
-            max-width: 40%;
-        }
-        .caption {
-            font-style: italic;
-            color: #666;
-            margin-top: 10px;
-            font-size: 0.9em;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #e0e0e0;
-        }
-        .logos {
-            display: flex;
-            justify-content: center;
-            align-items: left;
-        }
-        .logos img {
-            height: 45px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .citation {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-    
-       
-     .fig-container-side {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .fig-intro {
             text-align: center;
             margin: 30px auto;
             max-width: 900px;
         }
-        .fig-container-side img {
-            max-width: 45%;
-            height: auto;
-        }
-        .button img {
-            height: 20px;
-            margin-right: 8px;
-        }
-    
-        .fig-intro {
-            text-align: center;
-            margin: 30px auto;
-            max-width: 900px; /* Ensure the figure and caption share the same width */
-
-        }
-        
         .fig-intro img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
-        
-         .fig-caption {
+        .fig-caption {
             text-align: center;
             font-style: italic;
             color: #666;
             margin-top: 10px;
             font-size: 0.9em;
-            max-width: 900px; /* Match figure width */
+            max-width: 900px;
         }
-
-        
-        /* Style for the abstract section */
         .abstract-section {
-            background-color: #FBF6F2; /* Light beige color */
+            background-color: #FBF6F2;
             padding: 30px;
             margin: 30px auto;
-            max-width: 3000px;
+            max-width: 900px;
             border-radius: 8px;
         }
-        
         .abstract-section p {
             text-align: justify;
             font-size: 16px;
             line-height: 1.6;
             color: #333;
         }
-        /* Add space between major sections */
         .section-spacing {
-            margin-top: 100px; /* Adjust space between sections */
+            margin-top: 50px;
             margin-bottom: 40px;
         }
-
-        
+        /* Dropdown styling */
+        .dropdown-container {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .dropdown-container select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .figure-container {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .figure-container img {
+            max-width: 60%;
+            display: none; /* Hide all figures initially */
+        }
     </style>
 </head>
 <body>
-           <div class="header-container">
-                <img src="asset/logo.png" alt="logo" class="logo">
-                <h1 class="title">TimeTravel</h1>
-            </div>
-            <h1 class="title2">A Comprehensive Benchmark</h1>
-            <h1 class="title2">to Evaluate LMMs on Historical and Cultural Artifacts</h1>
-            <!-- Authors -->
-            <div class="authors">
-                <p>
-                    Sara Ghaboural<sup style="color:#3399FF;">1*</sup>, 
-                    Ketan More<sup style="color:#3399FF;">1*</sup>, 
-                    Ritesh Thawkar<sup style="color:#3399FF;">1</sup>, 
-                    Wafa Alghallabi<sup style="color:#3399FF;">1</sup>, 
-                    Omkar Thawakar<sup style="color:#3399FF;">1</sup>, <br>
-                    Fahad S. Khan<sup style="color:#3399FF;">1, </sup><sup style="color:#FF66B3;">2</sup>, 
-                    Hisham Cholakkal<sup style="color:#3399FF;">1</sup>,
-                    Salman Khan<sup style="color:#3399FF;">1, </sup><sup style="color:#FFA280;">3</sup>,
-                    Rao M. Anwer<sup style="color:#3399FF;">1, </sup><sup style="color:#4CB5AE;">4</sup>,
-                </p>
-                <p>
-                    <sup style="color:#3399FF;">1</sup>Mohamed bin Zayed University of AI, 
-                    <sup style="color:#FF66B3;">2</sup>Linköping University, 
-                    <sup style="color:#FFA280;">3</sup>Australian National University,
-                    <sup style="color:#4CB5AE;">4</sup>Aalto University
-                </p>
-            </div>
 
-            <div class="publication-links has-text-centered">
-                <span class="link-block">
-                    <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
-                        <img src="asset/pdf.png" alt="PDF">
-                        <span>Paper</span>
-                    </a>
-                </span>
-                <span class="link-block">
-                    <a href="https://arxiv.org/abs/2410.18976" class="external-link button">
-                        <img src="asset/arxiv_1.png" alt="arXiv">
-                        <span>arXiv</span>
-                    </a>
-                </span>
-                <span class="link-block">
-                    <a href="https://github.com/mbzuai-oryx/TimeTravel" class="external-link button">
-                        <img src="asset/git_1.png" alt="GitHub">
-                        <span>Github</span>
-                    </a>
-                </span>
-                <span class="link-block">
-                    <a href="https://huggingface.co/collections/ahmedheakl/camel-bench-670750f3998395452cd3b7b1" class="external-link button">
-                        <span class="icon" style="font-size:18px">🤗</span>
-                        <span>Dataset</span>
-                        </a>
-                    </span>
-            </div>
-    
-          
-            <!-- Introductory Figure -->
-            <div class="fig-intro section-spacing">
-                 <h1 class="title3">TimeTravel: A multimodal prehistoric and historic benchmark for LMMs </h1>
-                <img src="asset/Intro.png" alt="TimeTravel Overview">
-                <p class="fig-caption">
-                   A visual overview of TimeTravel, a benchmark evaluating LMMs across 10 historical regions and 266 cultures, featuring a radial categorization of 
-                    civilizations, dynasties, and cultural periods. On the right, sample artifacts from various cultures highlight the dataset's diversity.
-                </p>
-            </div>
+    <div class="header-container">
+        <img src="asset/logo.png" alt="logo" class="logo">
+        <h1 class="title">TimeTravel</h1>
+    </div>
+    <h1 class="title2">A Comprehensive Benchmark</h1>
+    <h1 class="title2">to Evaluate LMMs on Historical and Cultural Artifacts</h1>
 
-            
-            <!-- Abstract Section -->
-            <div class="abstract-section section-spacing">
-                <h2 class="title2">Abstract</h2>
-                <p>
-                    Understanding historical and cultural artifacts demands human expertise and advanced computational techniques,
-                    yet the process remains complex and time-intensive. While large multimodal models offer promising support, 
-                    their evaluation and improvement require a standardized benchmark. To address this, we introduce <i>TimeTravel</i>, 
-                    a benchmark of 10,250 expert-verified samples spanning 266 distinct cultures across 10 major historical regions. 
-                    Designed for AI-driven analysis of manuscripts, artworks, inscriptions, and archaeological discoveries, TimeTravel
-                    provides a structured dataset and robust evaluation framework to assess AI models’ capabilities in classification, 
-                    interpretation, and historical comprehension. By integrating AI with historical research, TimeTravel fosters AI-powered 
-                    tools for historians, archaeologists, researchers, and cultural tourists to extract valuable insights while ensuring 
-                    technology contributes meaningfully to historical discovery and cultural heritage preservation. We evaluate contemporary 
-                    AI models on TimeTravel highlight their strengths and identify areas for improvement. Our goal is to establish AI 
-                    as a reliable partner in preserving cultural heritage, ensuring that technological advancements contribute meaningfully 
-                    to historical discovery.
-                </p>
-            </div>
-    
-            <!-- Pipeline Figure -->
-            <div class="fig-intro section-spacing">
-                 <h1 class="title3">TimeTravel Construction Pipeline</h1>
-                <img src="asset/TT_pipeline.png" alt="TimeTravel pipeline">
-                <p class="fig-caption">
-                    A four-phase pipeline begins with data selection, followed by data cleaning, and then data generation and verification by domain experts. Finally, the verified data is aggregated to construct TimeTravel.</p>
-            </div>
+    <!-- Introductory Figure -->
+    <div class="fig-intro section-spacing">
+        <h1 class="title3">TimeTravel: A multimodal prehistoric and historic benchmark for LMMs</h1>
+        <img src="asset/Intro.png" alt="TimeTravel Overview">
+        <p class="fig-caption">
+            A visual overview of TimeTravel, evaluating LMMs across 10 historical regions and 266 cultures. On the right, sample artifacts highlight the dataset's diversity.
+        </p>
+    </div>
 
+    <!-- Abstract Section -->
+    <div class="abstract-section section-spacing">
+        <h2 class="title2">Abstract</h2>
+        <p>
+            Understanding historical and cultural artifacts demands human expertise and computational techniques, yet the process remains complex. 
+            TimeTravel is a benchmark of 10,250 expert-verified samples spanning 266 cultures across 10 regions. Designed for AI-driven analysis 
+            of manuscripts, artworks, inscriptions, and archaeological discoveries, it provides a structured dataset and evaluation framework.
+        </p>
+    </div>
 
-<footer class="footer">
+    <!-- Pipeline Figure -->
+    <div class="fig-intro section-spacing">
+        <h1 class="title3">TimeTravel Construction Pipeline</h1>
+        <img src="asset/TT_pipeline.png" alt="TimeTravel pipeline">
+        <p class="fig-caption">
+            A four-phase pipeline: data selection, data cleaning, data generation, expert verification, and aggregation.
+        </p>
+    </div>
+
+    <!-- Dropdown to Select Figures -->
+    <div class="dropdown-container">
+        <h2 class="title3">Select a Figure</h2>
+        <select id="figureDropdown" onchange="showFigure()">
+            <option value="">-- Select a Figure --</option>
+            <option value="fig1">Figure 1</option>
+            <option value="fig2">Figure 2</option>
+            <option value="fig3">Figure 3</option>
+            <option value="fig4">Figure 4</option>
+        </select>
+    </div>
+
+    <!-- Placeholder for Figures -->
+    <div class="figure-container">
+        <img id="fig1" src="asset/fig1.png" alt="Figure 1">
+        <img id="fig2" src="asset/fig2.png" alt="Figure 2">
+        <img id="fig3" src="asset/fig3.png" alt="Figure 3">
+        <img id="fig4" src="asset/fig4.png" alt="Figure 4">
+    </div>
+
+    <script>
+        function showFigure() {
+            // Hide all figures first
+            document.querySelectorAll('.figure-container img').forEach(img => img.style.display = 'none');
+
+            // Get selected value
+            let selectedFigure = document.getElementById('figureDropdown').value;
+
+            // Show the selected figure only
+            if (selectedFigure) {
+                document.getElementById(selectedFigure).style.display = 'block';
+            }
+        }
+    </script>
+
+    <footer class="footer">
         <div class="logos">
             <img src="asset/IVAL_logo.png" alt="ival">
             <img src="asset/Oryx_logo.png" alt="oryx">
             <img src="asset/MBZUAI_logo.png" alt="mbz">
         </div>
-        <div class="columns is-centered">
-            <div class="column is-8">
-                <div class="content">
-                    <p>
-                        This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a
-                            href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
-                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <p>This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
     </footer>
+
 </body>
 </html>
-
