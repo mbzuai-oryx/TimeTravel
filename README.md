@@ -319,7 +319,7 @@ The following tables present a comprehensive evaluation of various multimodal mo
 <br>
 <br>
 
-## 🧐 Qualitative Evaluation
+## 🧐 TimeTravel Dataset Examples
 Figures 3 and 4 showcase the cultural and material diversity of the TimeTravel dataset alongside a cross-model comparison, highlighting variations in artifact representation, historical periods, material compositions, and descriptive accuracy across different AI models.
 
 <div style="display: flex; justify-content: center; align-items: center;>
