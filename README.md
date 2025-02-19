@@ -324,7 +324,7 @@ Figures 3 and 4 showcase the cultural and material diversity of the TimeTravel d
 
 <div style="display: flex; justify-content: center; align-items: center;>
   <p align="center" >
-    <img src="asset/TT_ex_mini.png" width="1100px" height="450px" alt="models_compare" />
+    <img src="asset/samples_updated.png" width="1100px" height="450px" alt="models_compare" />
      <h6>
        <em>  <b>Figure 3.</b> Cultural and Material Diversity: TimeTravel spans civilizations from Ancient Egypt to Japan, covering prehistoric to medieval eras with artifacts in ceramics, metals, and stone, showcasing historical craftsmanship and cultural heritage. </em>
     </h6>
