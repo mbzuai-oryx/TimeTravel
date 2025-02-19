@@ -146,8 +146,17 @@
       
       .figure-container-d img {
           max-width: 60%;
-          /* display: none;  /* Hide all figures initially */
+         display: none;  /* Hide all figures initially */
       }
+
+     .figure-container-d img {
+          max-width: 60%;
+          display: none; /* Hide all figures initially */
+           }
+      #fig0 {
+               display: block; /* Ensure fig0 is visible by default */
+           }
+
 
 
      
@@ -406,21 +415,23 @@
                     A four-phase pipeline begins with data selection, followed by data cleaning, and then data generation and verification by domain experts. Finally, the verified data is aggregated to construct TimeTravel.</p>
             </div>
 
-            <script>
+          <script>
                function showFigure() {
-                    // Hide all figures first
-                    document.querySelectorAll('.figure-container-d img').forEach(img => img.style.display = 'none');
-                
-                    // Get selected value
-                    let selectedFigure = document.getElementById('figureDropdown').value;
-                
-                    // Show the selected figure only if an option is selected
-                    if (selectedFigure) {
-                        document.getElementById(selectedFigure).style.display = 'block';
-                    }
-                }
+                   // Hide all figures first
+                   document.querySelectorAll('.figure-container-d img').forEach(img => img.style.display = 'none');
+           
+                   // Get the selected value
+                   let selectedFigure = document.getElementById('figureDropdown').value;
+           
+                   // Show the selected figure, or show fig0 if nothing is selected
+                   if (selectedFigure && selectedFigure !== "fig0") {
+                       document.getElementById(selectedFigure).style.display = 'block';
+                   } else {
+                       document.getElementById("fig0").style.display = 'block'; // Show fig0 as default
+                   }
+               }
+           </script>
 
-            </script>
 
 <footer class="footer">
         <div class="logos">
