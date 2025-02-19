@@ -47,8 +47,8 @@
 
 ##  <img src="https://github.com/user-attachments/assets/1abcf195-ad44-4500-a14b-f1a4bef9b748" width="40" height="40" />Latest Updates
 
- 🤗 **[18 Feb 2025]** TimeTravel dataset available on HuggingFace.<br>
- 🔥 **[19 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
+ 🤗 **[19 Feb 2025]** TimeTravel dataset available on HuggingFace.<br>
+ 🔥 **[20 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
 <br>
 <br>
 
@@ -92,7 +92,7 @@ TimeTravel is the <b>first comprehensive</b> benchmark for AI-driven historical 
 The TimeTravel dataset follows a structured pipeline to ensure the accuracy, completeness, and contextual richness of historical artifacts.<br>
 
 <p align="center">
-   <img src="asset/pipe_last.png" width="2700px" height="250px" alt="pipeline"  style="margin-right: 2px";/>
+   <img src="asset/pipe_last.png" width="2600px" height="250px" alt="pipeline"  style="margin-right: 2px";/>
     <h6>
        <em>  <b>Figure 2.</b> TimeTravel Data Pipeline: A structured workflow for collecting, processing, and refining museum artifact data, integrating GPT-4o-generated descriptions with expert validation for benchmark accuracy.compliance. </em>
     </h6>
@@ -349,7 +349,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Ketan More](mailto:ketan.more@mbzuai.ac.ae)
 - [Omkar Thawakar](mailto:omkar.thawakar@mbzuai.ac.ae)
 <br>
+
 For questions or suggestions, feel free to reach out to us on [GitHub Discussions](https://github.com/mbzuai-oryx/TimeTravel/discussions).
+
 
 
 
