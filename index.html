@@ -195,18 +195,30 @@
             height: 20px;
             margin-right: 8px;
         }
-
+    
         .fig-intro {
             text-align: center;
             margin: 30px auto;
+            max-width: 900px; /* Ensure the figure and caption share the same width */
+
         }
         
         .fig-intro img {
-            max-width: 60%;
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
+        
+         .fig-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+            max-width: 900px; /* Match figure width */
+        }
+
         
         /* Style for the abstract section */
         .abstract-section {
@@ -290,10 +302,13 @@
           
             <!-- Introductory Figure -->
             <div class="fig-intro section-spacing">
-                <h1 class="title3">TimeTravel: A multimodal prehistoric and historic benchmark for LMMs </h1>
-                <img src="asset/Intro.png" alt="Introductory Figure">
-                <caption>A visual overview of TimeTravel, a benchmark evaluating LMMs on 10 historical regions and 266 cultures, showcasing a radial categorization of various civilizations, dynasties, and cultural periods.</caption>
+                 <h1 class="title3">TimeTravel: A multimodal prehistoric and historic benchmark for LMMs </h1>
+                <img src="asset/Intro.png" alt="TimeTravel Overview">
+                <p class="fig-caption">
+                    A visual overview of <i>TimeTravel</i>, a benchmark evaluating LMMs on 10 historical regions and 266 cultures, showcasing a radial categorization of various civilizations, dynasties, and cultural periods.
+                </p>
             </div>
+
             
             <!-- Abstract Section -->
             <div class="abstract-section section-spacing">
