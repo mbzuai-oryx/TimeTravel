@@ -341,7 +341,7 @@
 
  
           <div class="abstract-section section-spacing">
-                       <h2 class="title2">Qualitative Examples</h2>
+                       <h2 class="title2">TimeTravel Examples</h2>
                        <p>
                           Explore our TimeTravel Dataset by selecting an archaeological region to view representative examples from different cultures and historical periods.
                        </p>
@@ -350,9 +350,8 @@
  
           <!-- Dropdown to Select Figures -->
             <div class="dropdown-container section-spacing">
-                <h2 class="title3">Select an Archaeological Region to view examples.</h2>
                 <select id="figureDropdown" onchange="showFigure()">
-                    <option value="">-- Select a Region--</option>
+                    <option value="fig0">-- Select a Region--</option>
                     <option value="fig1">British Isles/ Viking</option>
                     <option value="fig2">Central America/ Maya</option>
                     <option value="fig3">China/ Tang Dynasty</option>
@@ -368,6 +367,7 @@
         
             <!-- Placeholder for Figures -->
             <div class="figure-container-d">
+                <img id="fig0" src="asset/viking.png" alt="Figure 0">
                 <img id="fig1" src="asset/viking.png" alt="Figure 1">
                 <img id="fig2" src="asset/maya.png" alt="Figure 2">
                 <img id="fig3" src="asset/china.png" alt="Figure 3">
