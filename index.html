@@ -135,6 +135,22 @@
             max-width: 60%;
             height: auto;
         }
+       .figure-container-d {
+          text-align: center;
+          display: flex;
+          justify-content: center;  /* Centers the image horizontally */
+          align-items: center;      /* Centers vertically if needed */
+          margin: 30px auto;
+          min-height: 300px;        /* Ensures space is reserved */
+      }
+      
+      .figure-container-d img {
+          max-width: 60%;
+          display: none;  /* Hide all figures initially */
+      }
+
+
+     
         .fig-container-s {
             text-align: center;
             margin: 30px 0;
@@ -350,7 +366,7 @@
             </div>
     
           <!-- Dropdown to Select Figures -->
-            <div class="dropdown-container">
+            <div class="dropdown-container section-spacing ">
                 <h2 class="title3">Select an Archaeological Region to view examples.</h2>
                 <select id="figureDropdown" onchange="showFigure()">
                     <option value="">-- Select a Region--</option>
@@ -370,18 +386,19 @@
             </div>
         
             <script>
-                function showFigure() {
+               function showFigure() {
                     // Hide all figures first
-                    document.querySelectorAll('.figure-container img').forEach(img => img.style.display = 'none');
-        
+                    document.querySelectorAll('.figure-container-d img').forEach(img => img.style.display = 'none');
+                
                     // Get selected value
                     let selectedFigure = document.getElementById('figureDropdown').value;
-        
-                    // Show the selected figure only
+                
+                    // Show the selected figure only if an option is selected
                     if (selectedFigure) {
                         document.getElementById(selectedFigure).style.display = 'block';
                     }
                 }
+
             </script>
 
 <footer class="footer">
