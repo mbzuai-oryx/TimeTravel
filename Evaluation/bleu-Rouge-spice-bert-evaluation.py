@@ -22,14 +22,14 @@ from pycocoevalcap.spice.spice import Spice
 from bert_score import score
 from tqdm import tqdm
 import os
-import sys  # in case we want sys.exit()
+import sys  
 
 # ============================
 # 1. Download nltk data and Load & Process Ground Truth Data
 # ============================
 nltk.download('punkt')
 
-ground_truth_path = "/data2/ketan/history_project_subset_v2/datatset/ground_truth_description.json"
+ground_truth_path = ".../ground_truth_description.json"
 with open(ground_truth_path, "r", encoding="utf-8") as f:
     ground_truth_data = json.load(f)
 
@@ -49,7 +49,7 @@ for item in ground_truth_data:
 # ============================
 # 2. Load VLM-generated Descriptions
 # ============================
-vlm_response_path = "/data2/ketan/history_project_subset_v2/desciption_generation/response.json"
+vlm_response_path = ".../response.json"
 with open(vlm_response_path, "r", encoding="utf-8") as f:
     vlm_response_data = json.load(f)
 
