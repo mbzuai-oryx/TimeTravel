@@ -1,6 +1,6 @@
-# Evaluation Scripts for Vision-Language Model (VLM)
+# Evaluation Scripts for TimeTravel
 
-This repository contains Python scripts for evaluating Vision-Language Model (VLM) generated descriptions using various NLP metrics.
+This repository contains Python scripts for evaluating TimeTravel Benchmark.
 
 ## Installation
 Install required dependencies:
