@@ -8,7 +8,7 @@
  <div  align="center" style="margin-top:10px;"> 
     
   [Sara Ghaboura](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
-  [Ketan More](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
+  [Ketan More](https://github.com/ketanmore2002) <sup> * </sup> &nbsp;
   [Retish Thawkar](https://huggingface.co/SLMLAH) &nbsp;
   [Wafa Alghallabi](https://huggingface.co/SLMLAH) &nbsp;
   [Omkar Thawakar](https://omkarthawakar.github.io)  &nbsp;
@@ -339,6 +339,10 @@ Figures 3 and 4 showcase the cultural and material diversity of the TimeTravel d
 </div>
 <br>
 
+
+## Evaluation
+
+Please refer to Evaluation folder to reproduce the results.
 
 
 ## ⚖️ License
