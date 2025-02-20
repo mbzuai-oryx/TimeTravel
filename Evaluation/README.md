@@ -1,6 +1,6 @@
 # Evaluation Scripts for TimeTravel
 
-This repository contains Python scripts for evaluating TimeTravel Benchmark.
+This folder contains Python scripts for evaluating TimeTravel Benchmark.
 
 ## Installation
 Install required dependencies:
