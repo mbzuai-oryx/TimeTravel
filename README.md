@@ -1,6 +1,8 @@
-<div align=left>
-<img src="asset/logo.png" width="150px"> <h2 align="center"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts </h2>
-</div>
+ <img src='asset/logo.png' align="left" width="11%" />
+ <div style="margin-top:50px;">
+      <h1 style="font-size: 30px; margin: 0;"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts</h1>
+ </div>
+   
    
  <div  align="center" style="margin-top:10px;"> 
     
