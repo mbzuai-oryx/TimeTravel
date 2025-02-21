@@ -8,7 +8,7 @@
     
   [Sara Ghaboura](https://huggingface.co/SLMLAH) <sup> * </sup> &nbsp;
   [Ketan More](https://github.com/ketanmore2002) <sup> * </sup> &nbsp;
-  [Retish Thawkar](https://huggingface.co/SLMLAH) &nbsp;
+  [Ritesh Thawkar](https://huggingface.co/SLMLAH) &nbsp;
   [Wafa Alghallabi](https://huggingface.co/SLMLAH) &nbsp;
   [Omkar Thawakar](https://omkarthawakar.github.io)  &nbsp;
   <br>
