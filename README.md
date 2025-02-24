@@ -48,7 +48,7 @@
 
 ##  <img src="https://github.com/user-attachments/assets/1abcf195-ad44-4500-a14b-f1a4bef9b748" width="40" height="40" />Latest Updates
 
- 🤗 **[19 Feb 2025]** TimeTravel dataset available on HuggingFace.<br>
+ 🤗 **[19 Feb 2025]** TimeTravel dataset available on [HuggingFace](https://huggingface.co/datasets/MBZUAI/TimeTravel).<br>
  🔥 **[20 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
 <br>
 <br>
