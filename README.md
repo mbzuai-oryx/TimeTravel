@@ -50,6 +50,7 @@
 
  🤗 **[19 Feb 2025]** TimeTravel dataset available on [HuggingFace](https://huggingface.co/datasets/MBZUAI/TimeTravel).<br>
  🔥 **[20 Feb 2025]** TimeTravel the **1<sup>st</sup>** comprehensive open-source benchmark on Historical and Cultural Artifacts is released.<br>
+ 🔥🔥 **[15 May 2025]** TimeTravel accepted to ACL 2025.<br>
 <br>
 <br>
 
