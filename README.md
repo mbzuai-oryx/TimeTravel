@@ -1,6 +1,6 @@
  <img src='asset/logo.png' align="left" width="11%" />
  <div style="margin-top:50px;">
-      <h1 style="font-size: 30px; margin: 0;"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts <br>[ACL 2025 🔥]</h1>
+      <h1 style="font-size: 30px; margin: 0;"> TimeTravel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts [ACL 2025 🔥]</h1>
  </div>
    
    
